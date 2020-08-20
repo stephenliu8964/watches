@@ -10,6 +10,8 @@ router.use(function(req, res, next){
 
     next();
 });
+
 router.use('/', require('./home'));
+router.use('/watches', require('./watches'));
 
 module.exports = router;
